@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  docker-events:
+    build: .
+    command: ["yarn", "run", "dev"]
+    volumes:
+      - /home/node/app/node_modules
+      - .:/home/node/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/bin/docker

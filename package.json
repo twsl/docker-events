@@ -1,0 +1,16 @@
+{
+  "name": "docker-events",
+  "version": "0.1.0",
+  "description": "Show docker events - plain and simple",
+  "main": "index.js",
+  "repository": "https://github.com/twsl/docker-events",
+  "author": "twsl",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "dockerode": "^3.2.1"
+  }
+}
